@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        tools:context="com.example.uberv.creatingdrawables.MainActivity">
+
+
+        <!--<Button-->
+        <!--android:id="@id/button"-->
+        <!--android:text="TEST TEST TEST"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/bubble"/>-->
+        <TextView
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9-Patch"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bubble"
+            android:text="Press Me!"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble"
+            android:text="Lorem Ipsum Porem!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            />
+        <!-- Speech bubble -->
+        <TextView
+            android:textSize="28sp"
+            android:textColor="#ffffff"
+            android:text="Hello World!"
+            android:background="@drawable/speec_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/blue_button"
+            android:fontFamily="monospace"
+            android:onClick="buttonClick"
+            android:text="9"
+            android:textColor="@android:color/background_light"
+            android:textSize="48sp"
+            android:textStyle="normal|bold"/>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shape Drawables"/>
+
+        <!--Rounded background for ViewGroup-->
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/roundback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Gradient background TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgradient"
+                android:padding="10dp"
+                android:text="This is some text with the gradient background implemented via shape drawable."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgradient"
+                android:padding="10dp"
+                android:text="More gradient text"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Drawable Patterns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Subtitle"/>
+
+        <!-- Bitmap patterns -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/pattern_checker"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/pattern_stripes"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="State Drawables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Subtitle"/>
+
+        <com.example.uberv.creatingdrawables.RoundedCornerImageView
+            android:id="@+id/rounded_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Patterns define how smaller image should be stepped and repeated to make a pattern -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@drawable/checkers"
+        android:tileMode="repeat" />
